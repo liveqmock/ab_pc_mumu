@@ -30,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<p style="display:none">
     	<textarea id="Template-BOM" rows="0" cols="0">
     	     {#foreach $T as record begin=0}  
-			     <li> <a href="">{$T.record.channelName} </a> </li>
+			     <li> <a href="">{$T.record.channel_name} </a> </li>
 			  {#/for}  
 		</textarea>
     </p>

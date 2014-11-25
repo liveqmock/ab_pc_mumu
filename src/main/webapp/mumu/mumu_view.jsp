@@ -21,6 +21,37 @@
 </head>
 <%@ include file="/common/head.jsp"%>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
+<!-- 模板 -->
+<p style="display:none">
+    	<textarea id="Template-BOM" rows="0" cols="0">
+    	     {#foreach $T as recordTitle begin=0}  
+			     <li> <a href="">{$T.recordTitle.channel_name} </a> </li>
+			  {#/for}  
+		</textarea>
+</p>
+ <p style="display:none">
+    	 <textarea id="Template_content" rows="0" cols="0">
+    	     {#foreach $T.contents as record begin=0}  
+			   <div class="clearfix article-box">
+									<a href=""
+										class="a-img" target="_blank"><img
+										src="http://182.92.160.36{$T.record.type_img}"></a>
+									<div class="article-box-ctt">
+										<h4>
+											<a href="http://immumu.com/article/102101/1.html"
+												target="_blank">{$T.record.title}</a>
+										</h4>
+										<div class="box-other">
+											<time>{$T.record.release_date}</time>
+										</div>
+										<div class="article-summary">{$T.record.description}</div>
+										
+									</div>
+								</div>
+			  {#/for}  
+		</textarea> 
+    </p>
+<!-- 模板 -->
 	<div class="container-hx">
 		<div class="top">
 			<div class="top-box">
@@ -43,15 +74,7 @@
 		</div>
 		<div class="side-menu-hx">
 			<div class="side-menu-top">
-				<ul class="side-menu-list">
-					<li><a href="http://immumu.com/">首页</a></li>
-					<li class="active"><a href="http://immumu.com/focus">看点</a></li>
-					<li><a href="http://immumu.com/opinions">观点</a></li>
-					<li><a href="http://immumu.com/books">读点</a></li>
-					<li><a href="http://immumu.com/products">用点</a></li>
-					<li><a href="http://immumu.com/tags">标签</a></li>
-					<li><a href="http://immumu.com/photo">图说</a></li>
-					<li><a href="http://immumu.com/collections">文集</a></li>
+				<ul class="side-menu-list" id="side-menu-list_title" class="Content">$T.statusText
 				</ul>
 			</div>
 			<div class="search">
@@ -96,55 +119,11 @@
 										href="http://immumu.com/tags/2989.html" target="_blank">电影</a></span>
 								</div>
 							</div>
-							<div class="article-list idx-list">
-								<div class="clearfix article-box">
-									<a href="http://immumu.com/article/102101/1.html"
-										class="a-img" target="_blank"><img
-										src="../img//141045690621.png"></a>
-									<div class="article-box-ctt">
-										<h4>
-											<a href="http://immumu.com/article/102101/1.html"
-												target="_blank">个人年度观察：致最好的时代</a>
-										</h4>
-										<div class="box-other">
-											<span class="source-quote"><a class="hx-card"
-												userid="29318" href="http://immumu.com/member/29318.html"
-												target="_blank">阑夕</a></span><a
-												href="http://immumu.com/member/29318/authorapply.html"
-												target="_blank" class="c-hxrz hxrzzz hxrzzz-level-4"
-												title="虎嗅认证作者"></a>
-											<time>2014-11-23 14:25:00</time>
-											<span class="comment-box"><i class="icon-comment"></i><a
-												href="http://immumu.com/comment/102101/1.html"
-												target="_blank">7</a></span>
-										</div>
-										<div class="article-summary">阑夕回顾一年来在虎嗅发十五篇文章的心路及感悟</div>
-										<p class="tags-box">
-											<span class="toggle-tooltip later-reading-wrap"><a
-												href="javascript:void(0);" class="later-reading-btn "
-												aid="102101" data-toggle="tooltip" data-placement="top"
-												data-original-title="稍后阅读，保存后在微信中也可查看列表.^_^"><i title=""
-													data-original-title=""></i></a></span><a
-												href="http://immumu.com/tags/10018.html" target="_blank">陈彤</a><a
-												href="http://immumu.com/tags/3308.html" target="_blank">罗永浩</a><a
-												href="http://immumu.com/tags/3368.html" target="_blank">今日头条</a><a
-												href="http://immumu.com/tags/2038.html" target="_blank">自媒体</a>
-										</p>
-									</div>
-								</div>
-								
+							<div class="article-list idx-list" id="content_list">
+								<!-- 模板 -->
+								$T.statusText
 							</div>
-							<div class="clearfix pages">
-								<div class="pull-right pgs">
-									<b>1</b><a href="http://immumu.com/focus/2.html">2</a><a
-										href="http://immumu.com/focus/3.html">3</a><a
-										href="http://immumu.com/focus/4.html">4</a><span
-										class="next"><a
-										href="http://immumu.com/focus/2.html">&gt;</a></span><span
-										class="end"><a
-										href="http://immumu.com/focus/1182.html">&gt;|</a></span>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 					<div class="side-container-hx">
@@ -180,4 +159,33 @@
 
 	
 </body>
+
+				
+<script type="text/javascript">
+$(document).ready(function(){
+	 
+	 var url_channel = "../common?urlFlag=1&level=1";
+	  $.ajax({
+		 url:url_channel,
+		 dataType:"json",
+		 success:function(data){
+				$("#side-menu-list_title").setTemplateElement("Template-BOM");
+		        $("#side-menu-list_title").processTemplate(data.data);
+		 }
+	 }); 
+	var url_content = "../common?urlFlag=2&level=1&channelId=43";
+	 $.ajax({
+		 url:url_content,
+		 dataType:"json",
+		 success:function(data){
+			 
+				$("#content_list").setTemplateElement("Template_content");
+		        $("#content_list").processTemplate(data.data);
+		 }
+	 }); 
+	 
+	});
+		
+</script>
+
 </html>

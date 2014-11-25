@@ -55,7 +55,7 @@ public class PublicServlet extends HttpServlet {
 		"="+plat+
 		"&level="+level+
 		(channelId!=null?"&channel_id="+channelId:"")+
-		"&debug";
+		"&debug=";
 		request.getRequestDispatcher(dispaUrl).forward(request, response);
 	}
 
