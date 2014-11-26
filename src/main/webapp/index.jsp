@@ -25,62 +25,37 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <script src="js/common/jquery-2.1.1.min.js" charset="utf-8"></script> 
 	 <script src="js/common/jquery-jtemplates.js" charset="utf-8"></script>
  </head>
-<body data-spy="scroll" data-target=".bs-docs-sidebar" onload="">
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
 	<!-- jstemplate模板 -->
 	<p style="display:none">
     	<textarea id="Template-BOM" rows="0" cols="0">
-    	     {#foreach $T as record begin=0}  
-			     <li> <a href="">{$T.record.channel_name} </a> </li>
+    	     <li class="active"><a href="/ab_pc_mumu/">首页</a></li>
+			 {#foreach $T as record begin=0}  
+			     <li> <a href="mumu/{$T.record.channel_id}.jsp">{$T.record.channel_name} </a> </li>
 			  {#/for}  
 		</textarea>
     </p>
-    <p style="display:none">
-    	<%-- <textarea id="Template_content" rows="0" cols="0">
+   <p style="display:none">
+    	 <textarea id="Template_content" rows="0" cols="0">
     	     {#foreach $T.contents as record begin=0}  
-			    <div class="clearfix article-box ">
-									<a href="${record.url}" class="a-img" target="_blank"><img
-										src="${record.typeImg!site.defImg}" alt="${record.title}"></a>
+			   <div class="clearfix article-box">
+									<a href=""
+										class="a-img" target="_blank"><img
+										src="http://182.92.160.36{$T.record.type_img}"></a>
 									<div class="article-box-ctt">
 										<h4>
-											<a href="http://www.huxiu.com/article/45628/1.html"
-												target="_blank">虎扯：我为什么不写软文了</a>
+											<a href="http://immumu.com/article/102101/1.html"
+												target="_blank">{$T.record.title}</a>
 										</h4>
 										<div class="box-other">
-											<span class="source-quote"><a class="hx-card"
-												userid="43670" href="http://www.huxiu.com/member/43670.html"
-												target="_blank">伯通</a><a
-												href="http://www.huxiu.com/member/43670/authorapply.html"
-												target="_blank" class="c-hxrz hxrzzz hxrzzz-level-3"
-												title="虎嗅认证作者"></a></span>
-											<time>2014-10-30 18:23:00</time>
+											<time>{$T.record.release_date}</time>
 										</div>
-										<div class="article-summary">软文没有错，公关没有错，但这个在中国互联网业还处于摸索阶段的业务模式，对大多数人而言实在是一种侮辱。</div>
-
-										<p class="tags-box">
-											<a href="http://www.huxiu.com/tags/3944.html" target="_blank">虎扯</a><a
-												href="http://www.huxiu.com/tags/357.html" target="_blank">投稿</a><i
-												class="i-icon-bottom"></i>
-										</p>
+										<div class="article-summary">{$T.record.description}</div>
+										
 									</div>
-									<div class="idx-hldj">
-										<div class="article-icon">
-											<span class="toggle-tooltip later-reading-wrap"><a
-												href="javascript:void(0);" class="later-reading-btn "
-												aid="45628" data-toggle="tooltip" data-placement="top"
-												data-original-title="稍后阅读，保存后在微信中也可查看列表.^_^"><i title=""
-													data-original-title=""></i></a></span><span class="comment-box"><i
-												class="icon-comment"></i><a
-												href="http://www.huxiu.com/comment/45628/1.html#odby"
-												target="_blank">3</a></span>
-
-										</div>
-									</div>
-
-									<!--  [@text_cut s=a.title len=titLen /] -->
-
 								</div>
 			  {#/for}  
-		</textarea> --%>
+		</textarea> 
     </p>
 <!-- jstemplate模板 -->
 	<div class="container-hx">
@@ -104,7 +79,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		<div class="side-menu-hx">
 			<div class="side-menu-top">
-				<ul class="side-menu-list" id="side-menu-list_title" class="Content">$T.statusText
+				<ul class="side-menu-list" id="side-menu-list_title" class="Content">
+				$T.statusText
 				</ul>
 			</div>
 			<div class="search">
@@ -157,61 +133,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 							</div>
 
-
-							<div class="article-list idx-list" id="article-list-content" class="content">
-							
-<%-- 
-								[@cms_content_list count='5' orderBy='4' typeId='3' titLen='18'
-								channelOption='1' channelId='1'] [#list tag_list as a]
-								<div class="clearfix article-box ">
-									<a href="${a.url}" class="a-img" target="_blank"><img
-										src="${a.typeImg!site.defImg}" alt="${a.title}"></a>
-									<div class="article-box-ctt">
-										<h4>
-											<a href="http://www.huxiu.com/article/45628/1.html"
-												target="_blank">虎扯：我为什么不写软文了</a>
-										</h4>
-										<div class="box-other">
-											<span class="source-quote"><a class="hx-card"
-												userid="43670" href="http://www.huxiu.com/member/43670.html"
-												target="_blank">伯通</a><a
-												href="http://www.huxiu.com/member/43670/authorapply.html"
-												target="_blank" class="c-hxrz hxrzzz hxrzzz-level-3"
-												title="虎嗅认证作者"></a></span>
-											<time>2014-10-30 18:23:00</time>
-										</div>
-										<div class="article-summary">软文没有错，公关没有错，但这个在中国互联网业还处于摸索阶段的业务模式，对大多数人而言实在是一种侮辱。</div>
-
-										<p class="tags-box">
-											<a href="http://www.huxiu.com/tags/3944.html" target="_blank">虎扯</a><a
-												href="http://www.huxiu.com/tags/357.html" target="_blank">投稿</a><i
-												class="i-icon-bottom"></i>
-										</p>
-									</div>
-									<div class="idx-hldj">
-										<div class="article-icon">
-											<span class="toggle-tooltip later-reading-wrap"><a
-												href="javascript:void(0);" class="later-reading-btn "
-												aid="45628" data-toggle="tooltip" data-placement="top"
-												data-original-title="稍后阅读，保存后在微信中也可查看列表.^_^"><i title=""
-													data-original-title=""></i></a></span><span class="comment-box"><i
-												class="icon-comment"></i><a
-												href="http://www.huxiu.com/comment/45628/1.html#odby"
-												target="_blank">3</a></span>
-
-										</div>
-									</div>
-
-									<!--  [@text_cut s=a.title len=titLen /] -->
-
-								</div>
-								[/#list] [/@cms_content_list] --%>
-
-								<div class="idx-more">
-									<a class="a-more-idx"
-										href="http://www.huxiu.com/focus.html?more=1" target="_blank">更多</a>
-								</div>
+							<div class="article-list idx-list" id="content_list">
+								<!-- 模板 -->
+								$T.statusText
 							</div>
+							
 						</div>
 					</div>
 					
@@ -252,16 +178,16 @@ $(document).ready(function(){
 		        $("#side-menu-list_title").processTemplate(data.data);
 		 }
 	 });
-	/* var url_content = "common?urlFlag=2&level=1&channelId=1";
+	 var url_content = "common?urlFlag=2&level=1&channelId=43";
 	 $.ajax({
 		 url:url_content,
 		 dataType:"json",
 		 success:function(data){
-			 alert(data.data);
-				$("#article-list-content").setTemplateElement("Template_content");
-		        $("#article-list-content").processTemplate(data.data);
+			 
+				$("#content_list").setTemplateElement("Template_content");
+		        $("#content_list").processTemplate(data.data);
 		 }
-	 }); */
+	 }); 
 	 
 	});
 		

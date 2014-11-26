@@ -24,8 +24,9 @@
 <!-- 模板 -->
 <p style="display:none">
     	<textarea id="Template-BOM" rows="0" cols="0">
+    	     <li class="active"><a href="/ab_pc_mumu/">首页</a></li>
     	     {#foreach $T as recordTitle begin=0}  
-			     <li> <a href="">{$T.recordTitle.channel_name} </a> </li>
+			     <li> <a href="{$T.recordTitle.channel_id}.jsp">{$T.recordTitle.channel_name} </a> </li>
 			  {#/for}  
 		</textarea>
 </p>
@@ -74,7 +75,8 @@
 		</div>
 		<div class="side-menu-hx">
 			<div class="side-menu-top">
-				<ul class="side-menu-list" id="side-menu-list_title" class="Content">$T.statusText
+				<ul class="side-menu-list" id="side-menu-list_title" class="Content">
+				$T.statusText
 				</ul>
 			</div>
 			<div class="search">
