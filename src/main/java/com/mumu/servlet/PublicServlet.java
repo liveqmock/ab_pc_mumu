@@ -20,11 +20,12 @@ public class PublicServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private static Log log = LogFactory.getLog(PublicServlet.class); 
-	private static String plat = Constants.PLAT_MAP.get("0");//pc¶Ë
+	private static String plat = Constants.PLAT_MAP.get("0");//pcï¿½ï¿½
 	private static Map<String, String> KEY_MAP = Constants.KEY_MAP; 
    	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
 	}
@@ -32,14 +33,15 @@ public class PublicServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
-		String urlFlag = request.getParameter("urlFlag");//key_url urlName:1±íÊ¾KEY_CHANNEL_ALL£¬2±íÊ¾KEY_CHANNEL_CONTENT
+		String urlFlag = request.getParameter("urlFlag");//key_url urlName:1ï¿½ï¿½Ê¾KEY_CHANNEL_ALLï¿½ï¿½2ï¿½ï¿½Ê¾KEY_CHANNEL_CONTENT
 		String level = request.getParameter("level");
 		String channelId = request.getParameter("channelId");
 		//request.setAttribute("level", "0");
-		//»ñÈ¡ËùÓÐÀ¸Ä¿½Ó¿Ú£¬Ä¿Ç°Ö»Ö§³Ö1¡¢2¼¶À¸Ä¿»ñÈ¡£¬Èç¹û»ñÈ¡ËùÓÐÀ¸Ä¿£¬level´«µÝ0£¬ÎÞlevel²ÎÊý»òlevel > 2£¬Ê²Ã´¶¼²»»á·µ»Ø
-		//level¼¶±ð£¬0£ºÈ«²¿£¬Ä¬ÈÏ£»1£º1¼¶À¸Ä¿£»2£º2¼¶À¸Ä¿
+		//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ó¿Ú£ï¿½Ä¿Ç°Ö»Ö§ï¿½ï¿½1ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½levelï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½levelï¿½ï¿½ï¿½ï¿½ï¿½level > 2ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½á·µï¿½ï¿½
+		//levelï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï£ï¿½1ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½2ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Ä¿
 		//key_url:KEY_CHANNEL_CONTENT KEY_CHANNEL_ALL
 		if("1".equals(urlFlag))
 		{

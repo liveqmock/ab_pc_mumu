@@ -29,9 +29,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- jstemplate模板 -->
 	<p style="display:none">
     	<textarea id="Template-BOM" rows="0" cols="0">
-    	     <li class="active"><a href="/ab_pc_mumu/">首页</a></li>
+    	     <li class="active"><a href="/">首页</a></li>
 			 {#foreach $T as record begin=0}  
-			     <li> <a href="mumu/{$T.record.channel_id}.jsp">{$T.record.channel_name} </a> </li>
+			     <li> <a href="/mumu/title/{$T.record.channel_id}.jsp">{$T.record.channel_name} </a> </li>
 			  {#/for}  
 		</textarea>
     </p>

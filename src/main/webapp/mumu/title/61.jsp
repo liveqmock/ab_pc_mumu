@@ -19,12 +19,12 @@
 <meta name="description" content="虎嗅网是一个有视角的、个性化商业资讯与交流平台，核心关注对象是包括公众公司与创业型企业在内的一系列明星公司">
 
 </head>
-<%@ include file="/common/head.jsp"%>
+<%@ include file="../common/head.jsp"%>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
 <!-- 模板 -->
 <p style="display:none">
     	<textarea id="Template-BOM" rows="0" cols="0">
-    	     <li class="active"><a href="/ab_pc_mumu/">首页</a></li>
+    	     <li class="active"><a href="/">首页</a></li>
     	     {#foreach $T as recordTitle begin=0}  
 			     <li> <a href="{$T.recordTitle.channel_id}.jsp">{$T.recordTitle.channel_name} </a> </li>
 			  {#/for}  
@@ -57,7 +57,7 @@
 		<div class="top">
 			<div class="top-box">
 				<h1 class="logo">
-					<a href="http://immumu.com/"><img src="../img/mumu_logo.png"></a>
+					<a href="http://immumu.com/"><img src="/img/mumu_logo.png"></a>
 				</h1>
 				<div class="login-box">
 					
@@ -101,7 +101,7 @@
 								<p>这近60天的时间里，目前定档的已有近40部影片，意味着平均3天就有2部新片上映，密集的时候同一天有5~7部影片上映，堪比绞肉机的战场里，烂片和炮灰弹指间灰飞烟灭</p>
 								<div class="box-img">
 									<a href="http://immumu.com/article/101934/1.html"><img
-										src="../img//000932167704.jpg"></a>
+										src="/img/000932167704.jpg"></a>
 								</div>
 								<div class="box-other">
 									<span class="toggle-tooltip later-reading-wrap"><a
@@ -166,7 +166,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	 
-	 var url_channel = "../common?urlFlag=1&level=1";
+	 var url_channel = "/common?urlFlag=1&level=1";
 	  $.ajax({
 		 url:url_channel,
 		 dataType:"json",
@@ -175,7 +175,7 @@ $(document).ready(function(){
 		        $("#side-menu-list_title").processTemplate(data.data);
 		 }
 	 }); 
-	var url_content = "../common?urlFlag=2&level=1&channelId=43";
+	var url_content = "/common?urlFlag=2&level=1&channelId=1";
 	 $.ajax({
 		 url:url_content,
 		 dataType:"json",
