@@ -6,7 +6,7 @@
  */
 @charset "utf-8";
 * {word-wrap:break-word;}
-body{font:normal 14px/24px "Microsoft Yahei","Hiragino Sans GB","鍐潚榛戜綋绠�綋涓枃 w3",STXihei, "鍗庢枃缁嗛粦","寰蒋闆呴粦", SimSun, "瀹嬩綋", Heiti, "榛戜綋", sans-serif;background-color:#f0f0f0;}
+body{font:normal 14px/24px "Microsoft Yahei","Hiragino Sans GB","冬青黑体简体中文 w3",STXihei, "华文细黑","微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;background-color:#f0f0f0;}
 h1,h2,h3,h4,h5,h6 {font-weight:normal;}
 a {text-decoration:none;color:#000;}
 a:hover {text-decoration:none;}
@@ -60,20 +60,17 @@ box-shadow: 2px 0 5px rgba(214, 214, 215, 0.9), -2px 0 5px rgba(214, 214, 215, 0
 
 
 /*
-*  搴曢儴
-*  by瑙佸ぉ
+*  底部
+*  by见天
 *  13.04.16
 */
 
 .footer {background-color:#fff;margin-top:20px;padding-bottom:10px;}
-/*
-#FE007F  #333
-*/
-.about-links {height:31px;line-height:31px;background-color:#FE007F;text-align:center;color:#5d5d5d;font-size:12px;box-shadow:0 2px 2px #c6c6c6}
+.about-links {height:31px;line-height:31px;background-color:#FE007F;text-align:center;color:#FE007F;font-size:12px;box-shadow:0 2px 2px #c6c6c6}
 .about-links a {margin:0 10px;color:#fff;}
 .footer-copy {text-align:center;padding:20px 0;color:#999;font-size:10px}
 .footer-copy a {color:#999;}
-.footer-logo {display:inline-block;background:url(../img/mumu_footer_logo.png) no-repeat;width:52px;height:42px;margin:0 10px;text-indent:-9999px;overflow:hidden;vertical-align: text-bottom;}
+.footer-logo {display:inline-block;background:url(/img/mumu_footer_logo.png) no-repeat;width:52px;height:42px;margin:0 10px;text-indent:-9999px;overflow:hidden;vertical-align: text-bottom;}
 .links {padding:20px 15px;}
 .links a {font-size:12px;color:#666;}
 .links h3 {text-align:center;margin:0;padding:0 0 0 10px;font-weight:bold;}
@@ -84,12 +81,12 @@ box-shadow: 2px 0 5px rgba(214, 214, 215, 0.9), -2px 0 5px rgba(214, 214, 215, 0
 
 
 /*
-*  top鑿滃崟
-*  by瑙佸ぉ
-*  13.07.29 xian#FE007F yuan:#2d2d2d
+*  top菜单
+*  by见天
+*  13.07.29
 */
 .top {width:100%;position:absolute;left:0;top:0;text-align:center;background:#FE007F;z-index:99;}
-.top-box {width:1000px;height:40px;margin:0 auto;}
+.top-box {width:1000px;height:42px;margin:0 auto;}
 .logo {float:left;position:absolute;margin:0 0 0 -17px;padding:0 17px;background:url(../img/logo_bg.png) no-repeat center bottom;}
 .logo img {border-top:2px solid #1d95d9;}
 .top-box .login-box {}
@@ -116,8 +113,8 @@ font-size: 12px;}
 .top-box .login-box .dropdown-toggle {border-radius:0; outline: none;}
 .top-box .login-box .contribute {padding:0 12px;background:#1d95d9;color: #fff;}
 /*
-*  涓儴瀵艰埅
-*  by瑙佸ぉ
+*  中部导航
+*  by见天
 *  13.04.16
 */
 .side-menu-hx {width:1000px;padding-top:38px;height:62px;}
@@ -131,8 +128,8 @@ font-size: 12px;}
 .side-menu-list li.active a {color:#fff;background:url(../img/menu_a_bg.png) no-repeat;}
 
 /*
-*  宸︿晶鑿滃崟
-*  by瑙佸ぉ
+*  左侧菜单
+*  by见天
 *  13.07.29
 */
 .nav-menu-hx {width:80px;position:fixed;margin-left:-81px;top:120px;overflow:hidden;}
@@ -144,8 +141,8 @@ font-size: 12px;}
 .nav-ul li a {display:block;height:28px;line-height:28px;background:#ccc;overflow:hidden;border-radius:2px 0 0 2px;color:#fff;font-size:12px;text-align:center;}
 .nav-ul li a:hover {background:#1d95d9}
 /*
-*  鎼滅储
-*  by瑙佸ぉ
+*  搜索
+*  by见天
 *  13.04.16
 */
 .search {position:relative;float:right;margin:10px 0 0 0;padding:0 0 0 30px;}
@@ -155,8 +152,8 @@ font-size: 12px;}
 
 
 /*
-*  鏍囩
-*  by瑙佸ぉ
+*  标签
+*  by见天
 *  13.04.16
 */
 .biaoqian {background-color:#eef3fb;line-height:14px;border-left:1px solid #e7ecf4;border-top:1px solid #dbe0e7;color:#dde1e7;margin:30px 0 23px;padding:14px 0 17px;}
@@ -164,8 +161,8 @@ font-size: 12px;}
 
 
 /*
-*  澶存潯
-*  by瑙佸ぉ
+*  头条
+*  by见天
 *  13.04.16
 */
 .toutiao {border-bottom:1px dashed #ddd;}
@@ -175,7 +172,7 @@ font-size: 12px;}
 .toutiao .box-other {padding:5px 0;}
 .source-quote a {color:#999;}
 .tags-box {color:#c4c4c5;text-align:left}
-/*鏀剁缉棣栭〉鍒楄〃鏍囩鐨勯棿璺�2014.03.07*/
+/*收缩首页列表标签的间距 2014.03.07*/
 .tags-box a {color:#006cd8;margin:0 5px 0 10px;font-size:12px;display:inline-block;}
 .box-other .source-quote {margin-right:5px;}
 .box-other time {margin-right:5px;}
@@ -194,8 +191,8 @@ font-size: 12px;}
 
 
 /*
-*  鏂囩珷鍒楄〃
-*  by瑙佸ぉ
+*  文章列表
+*  by见天
 *  13.04.16
 */
 .article-box {padding:15px 0;border-bottom:1px dashed #ddd}
@@ -214,8 +211,8 @@ font-size: 12px;}
 .idx-list .article-box .a-img img {width:220px;height:146px;}
 .idx-list .article-on .a-img img {width:350px;height:196px;}
 /*
-*  鐢婚緳鐐圭潧
-*  by瑙佸ぉ
+*  画龙点睛
+*  by见天
 *  13.06.25
 */
 .idx-list .idx-hldj {width:100%;float:left;position:relative;}
@@ -230,15 +227,15 @@ font-size: 12px;}
 .idx-list .hldj-box em {font-style:normal;margin-right:35px;}
 .idx-list .hldj-box .djtx-img {position:absolute;right:0;top:5px;}
 .idx-list .hldj-box:before,
-.idx-list .hldj-box:after {content:"鈾�;position:absolute;top:-12px;font-size:24px;right:10px;font-family:"Arial"}
+.idx-list .hldj-box:after {content:"♦";position:absolute;top:-12px;font-size:24px;right:10px;font-family:"Arial"}
 .idx-list .hldj-box:before {z-index:1;color:#eee;}
 .idx-list .hldj-box:after {z-index:2;color:#f1f1f1;}
 .idx-list .hldj-box a {}
 .idx-list .hldj-box img {margin:0 5px 0 0;width:40px;height:40px;float:left;}
 
 /*
-*  鐧诲綍娉ㄥ唽
-*  by瑙佸ぉ
+*  登录注册
+*  by见天
 *  13.04.16
 */
 .login-box  {color:#fcecbe;float:right;margin:0 8px 0 0;text-align:right;}
@@ -248,7 +245,7 @@ font-size: 12px;}
 .login-box-ico {width:2px;background:#ccc;}
 #report_brn2 {padding:0 12px;background:#1d95d9;color: #fff;}
 
-/*宸茬櫥褰�/
+/*已登录*/
 .lgn-user-face img {height:29px;height:29px;}
 .lgn-user .dropdown-menu {text-align:left;}
 .lgn-user .btn-group .btn {background:#999;border-color:#999;border-radius:0;color:#fff;text-shadow:none;box-shadow:none;padding-bottom:3px;}
@@ -263,8 +260,8 @@ font-size: 12px;}
 
 #lgnModal {top:50%;margin-top:-198px;}
 /*
-*  棣栭〉rss
-*  by瑙佸ぉ
+*  首页rss
+*  by见天
 *  13.04.16
 */
 .idx-rss-a {margin-left:54px;color:#b1b1b1;}
@@ -284,8 +281,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  鍥剧墖杞挱
-*  by瑙佸ぉ
+*  图片轮播
+*  by见天
 *  13.04.16
 */
 .t-h3 {font-size:14px;line-height:24px;padding:6px 0;}
@@ -310,8 +307,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  鐑棬瑙傜偣
-*  by瑙佸ぉ
+*  热门观点
+*  by见天
 *  13.04.16
 */
 .view-list {}
@@ -325,8 +322,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  浣滆�澶村儚鍒楄〃
-*  by瑙佸ぉ
+*  作者头像列表
+*  by见天
 *  13.04.16
 */
 .author-face-list {margin:0;padding:0;}
@@ -339,8 +336,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  鐑棬浣滆�鍒楄〃
-*  by瑙佸ぉ
+*  热门作者列表
+*  by见天
 *  13.04.16
 */
 .author-list,
@@ -357,8 +354,8 @@ body .no-bdr {border-bottom:none;}
 .author-ul a {font-size:14px;color:#666;}
 
 /*
-*  绮惧僵璇勮
-*  by瑙佸ぉ
+*  精彩评论
+*  by见天
 *  13.04.16
 */
 .cmt-box {border-bottom:1px dashed #ccc;padding:10px 0 30px;}
@@ -376,8 +373,8 @@ body .no-bdr {border-bottom:none;}
 .cmt-nr .icon-arrow-up {background-position:-145px -169px;width:18px;left:15px;top:-9px;position:absolute;}
 
 /*
-*  姣忔棩鑽愪功
-*  by瑙佸ぉ
+*  每日荐书
+*  by见天
 *  13.04.16
 */
 .book-box {border-bottom:1px dashed #ccc;padding:10px 0;}
@@ -390,16 +387,16 @@ body .no-bdr {border-bottom:none;}
 .book-box-ctt p {color:#333;margin:5px 0;}
 .book-box-ctt p em {color:#999;font-style:normal;}
 
-.author-card2 .sx-btn {background-color:#39c;display:none;/*鏆傛椂闅愯棌*/}
+.author-card2 .sx-btn {background-color:#39c;display:none;/*暂时隐藏*/}
 
 /*
-*  鍚嶇墖3
-*  by瑙佸ぉ
-*  13.05.11鍚敤涓哄彸渚�
+*  名片3
+*  by见天
+*  13.05.11启用为右侧
 */
 
 .author-card3 {margin:10px 0 15px;padding:5px 10px 10px;background-color:#fefefe;box-shadow:1px 1px 1px #f3f3f3;position:relative;font-size:12px;border-top:2px solid #f60;}
-.author-card3:after {content:'鈼�;position:absolute;right:5px;top:10px;color:#eee;font-size:20px;text-shadow:0 0 1px #fff;}
+.author-card3:after {content:'●';position:absolute;right:5px;top:10px;color:#eee;font-size:20px;text-shadow:0 0 1px #fff;}
 .author-card3 p {margin:0;}
 .author-card3 .author-card-img {width:60px;text-align:center;margin-top:5px;}
 .author-card3 .author-card-img img {width:60px;height:60px;border-radius:2px;box-shadow:1px 1px 1px #ccc;}
@@ -434,8 +431,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  棣栭〉鍐呭椤�
-*  by瑙佸ぉ
+*  首页内容页
+*  by见天
 *  13.04.16
 */
 
@@ -484,8 +481,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  璺熼殢鑿滃崟
-*  by瑙佸ぉ
+*  跟随菜单
+*  by见天
 *  13.05.01
 */
 .share-wrap {background:#f5f6f7;padding-right:10px;border-radius:2px 2px 0 0;margin:10px 0 0;height:32px;z-index:1;position:relative;}
@@ -530,8 +527,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  缈婚〉
-*  by瑙佸ぉ
+*  翻页
+*  by见天
 *  13.04.16
 */
 .pages {padding:20px 0 10px;}
@@ -565,8 +562,8 @@ body .no-bdr {border-bottom:none;}
 .pages-nav li.active {color:#39f}
 
 /*
-*  娴姩妗�
-*  by瑙佸ぉ
+*  浮动框
+*  by见天
 *  13.04.16
 */
 .float-box {padding:25px 30px;}
@@ -611,8 +608,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  鍐呭椤�
-*  by瑙佸ぉ
+*  内容页
+*  by见天
 *  13.04.16
 */
 .neirong {margin-top:10px;}
@@ -649,10 +646,10 @@ body .no-bdr {border-bottom:none;}
 .pinglun-more-a,
 #pinglun .pinglun-more-a:hover{display:block;height:30px;line-height:30px;text-align:center;color:#fff;background:#666;}
 #notice_span {color:#f00;margin:0 2px;}
-.neirong-shouquan {font-size:14px;font-family:'妤蜂綋','妤蜂綋_GB2312';padding-top:30px;}
+.neirong-shouquan {font-size:14px;font-family:'楷体','楷体_GB2312';padding-top:30px;}
 .neirong-shouquan span {}
 .neirong-shouquan span a {color:#333;}
-.neirong-shouquan span a.askAuthor {color:#08c;font-size:14px;font-family:'妤蜂綋','妤蜂綋_GB2312';padding-top:30px;}
+.neirong-shouquan span a.askAuthor {color:#08c;font-size:14px;font-family:'楷体','楷体_GB2312';padding-top:30px;}
 .neirong-title3 {color:#800000;line-height:1.4;}
 
 #loginpeople {margin-left:48px;}
@@ -671,8 +668,8 @@ body .no-bdr {border-bottom:none;}
 .book-reader ul li {margin:0 15px;}
 
 /*
-*  涔︾殑璇︽儏椤�
-*  by瑙佸ぉ
+*  书的详情页
+*  by见天
 *  13.05.12
 */
 .books-neirong-xq h1 {font-size:26px;line-height:36px;border-bottom:1px dashed #ccc;padding-bottom:10px;}
@@ -690,7 +687,7 @@ body .no-bdr {border-bottom:none;}
 .user-face-list .name a {}
 .user-face-list .name b {font-weight:normal;margin:0 5px;color:#999;}
 .user-face-list .ctt-nr {background:#e1e1e1;padding:5px 10px;position:relative;border-radius:5px;margin-top:15px;}
-.user-face-list .ctt-nr:after {content:"鈾�;position:absolute;left:10px;top:-10px;color:#e1e1e1;font-size:18px;}
+.user-face-list .ctt-nr:after {content:"♦";position:absolute;left:10px;top:-10px;color:#e1e1e1;font-size:18px;}
 .user-face-list .time {font-size:12px;color:#aaa;}
 
 
@@ -705,8 +702,8 @@ body .no-bdr {border-bottom:none;}
 .go-back a {color:#08c;margin:0 5px;}
 
 /*
-*  璐拱鍥句功
-*  by瑙佸ぉ
+*  购买图书
+*  by见天
 *  13.05.12
 */
 .buy-book {color:#999;}
@@ -719,8 +716,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  鎵╁睍闃呰
-*  by瑙佸ぉ
+*  扩展阅读
+*  by见天
 *  13.04.16
 */
 .related-list {color:#4da6ff;background-color:#f5f6f7;padding-bottom:10px;}
@@ -732,8 +729,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  璇勮
-*  by瑙佸ぉ
+*  评论
+*  by见天
 *  13.04.16
 */
 .hide {display:none;}
@@ -806,8 +803,8 @@ body .no-bdr {border-bottom:none;}
 
 
 /*
-*  浣滆�娆ｈ祻浣�
-*  by瑙佸ぉ
+*  作者欣赏你
+*  by见天
 *  13.05.12
 */
 .ico-zuozhexinshang {width:40px;height:55px;display:block;position:absolute;right:0;top:-6px;background:url(../img/youliao_bg.png) no-repeat;padding-left:24px;color:#fff;font-size:14px;letter-spacing: 0.3em;z-index:2;}
@@ -873,7 +870,7 @@ html .dianping-list {display:none;}
 html .show {display:block;}
 
 /**
-*	鐐硅瘎mini
+*	点评mini
 **/
 .dianping-mini-list {margin-top:8px;}
 .dianping-mini-box {position:relative;text-align:right;padding:8px 10px;background-color:#fff;cursor:pointer;box-shadow:1px 1px 1px #ccc;}
@@ -884,8 +881,8 @@ html .show {display:block;}
 .i-dianping-list-jiao {position:absolute;width:18px;height:10px;background:url(../img/btn_bg.png?data=20130902) no-repeat -19px -84px;display:block;overflow:hidden;top:-10px;right:20px;}
 	
 /*
-*  瑙傜偣鍒楄〃椤�
-*  by瑙佸ぉ
+*  观点列表页
+*  by见天
 *  13.04.21
 */
 .opinions-list {margin-top:30px;}
@@ -903,8 +900,8 @@ html .show {display:block;}
 .opinions-box .view-box .article-summary {font-size:14px;margin-left:214px;}
 	
 /*
-*  瑙傜偣鍒楄〃椤�
-*  by瑙佸ぉ
+*  观点列表页
+*  by见天
 *  13.04.21
 */
 .opinions-box2 {background-color:#f4f4f4;margin-bottom:20px;}
@@ -926,8 +923,8 @@ html .show {display:block;}
 
 
 /*
-*  浣滆�鍒楄〃椤�
-*  by瑙佸ぉ
+*  作者列表页
+*  by见天
 *  13.04.21
 */
 .author-page {}
@@ -937,8 +934,8 @@ html .show {display:block;}
 .author-page .name {margin:0 0 25px;}
 
 /*
-*  璇荤偣椤甸潰
-*  by瑙佸ぉ
+*  读点页面
+*  by见天
 *  13.04.22
 */
 .book-idx {box-shadow:0 1px 1px #ddd;padding-bottom:0px!important;margin-bottom:30px!important;background:#f7f7f7;border:1px solid #ddd!important;}
@@ -976,15 +973,15 @@ html .show {display:block;}
 .my-book .slides-div ul.on {left:0;}
 
 /*
-*  璇荤偣椤甸潰-涔﹀叆娉曚簩缁寸爜
-*  by瑙佸ぉ
+*  读点页面-书入法二维码
+*  by见天
 *  13.09.25
 */
 .shurufaer2 {width:280px;height:360px;background:url(../img/book2weima.png?data=20130925) no-repeat;overflow:hidden;}
 
 /*
-*  鎼滅储椤甸潰
-*  by瑙佸ぉ
+*  搜索页面
+*  by见天
 *  13.04.22
 */
 .search-wrap {}
@@ -1016,8 +1013,8 @@ html .show {display:block;}
 .search-list em{color: #FF0000;font-style:normal;}
 
 /*
-*  鍥捐
-*  by瑙佸ぉ
+*  图说
+*  by见天
 *  13.04.22
 */
 .tushuo-list dl {border-bottom:1px dashed #ccc;padding-bottom:10px;}
@@ -1059,9 +1056,9 @@ html .show {display:block;}
 .tushuo-pages-box ul {margin:0;position:relative;left:0;}
 .tushuo-pages-box ul:before,
 .tushuo-pages-box ul:after {display:block;width:100px;position:absolute;top:0;height:57px;line-height:57px;color:#fff;}
-.tushuo-pages-box ul:before {content:'娌℃湁鍟�;left:-80px;}
+.tushuo-pages-box ul:before {content:'没有啦';left:-80px;}
 .tushuo-pages-box ul:after {content:'';right:-120px;}
-.tushuo-pages-box .end:after {content:'娌℃湁鍟�;}
+.tushuo-pages-box .end:after {content:'没有啦';}
 .tushuo-pages-box ul li {width:100px;height:55px;overflow:hidden;padding:0;margin:0 4px;float:left;border:1px solid #333;}
 .tushuo-pages-box li img {width:100px;}
 .tushuo-pages-box li.active {border:1px solid #aaa;}
@@ -1074,8 +1071,8 @@ html .show {display:block;}
 .tushuo-top .neirong-other .pinglun-num .icon-comment {background-position: -168px -167px;}
 .tushuo-top .login-box {position:absolute;right:25px;top:5px;}
 /*
-*  绮惧僵璇勮
-*  by瑙佸ぉ
+*  精彩评论
+*  by见天
 *  13.04.22
 */
 .jingcaipinglun-page {margin-top:30px;}
@@ -1092,8 +1089,8 @@ html .show {display:block;}
 .zylpl-list .a-img img {width:80px;height:80px;}
 
 /*
-*  娉ㄥ唽
-*  by瑙佸ぉ
+*  注册
+*  by见天
 *  13.04.22
 */
 .reg-wrap-title {width:690px;height:28px;overflow:hidden;background:url(../img/reg-wrap-title.png) no-repeat;}
@@ -1143,8 +1140,8 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 #user_memo dd {margin:5px 0;font-size:12px;}
 
 /*
-*  鎶曠
-*  by瑙佸ぉ
+*  投稿
+*  by见天
 *  13.04.22
 *  updata 13.07.03
 */
@@ -1167,8 +1164,8 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 .tougao-box-ctt .dd-bookjianjie .div-textarea textarea {margin-left:4px;}
 
 /*
-*  鎶曢�娲诲姩
-*  by瑙佸ぉ
+*  投递活动
+*  by见天
 *  13.07.04
 */
 #toudihuodong {width:100%;display:block;}
@@ -1179,8 +1176,8 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 
 
 /*
-*  鐑瘝
-*  by瑙佸ぉ
+*  热词
+*  by见天
 *  13.04.22
 */
 .reci-top {position:relative;}
@@ -1217,7 +1214,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 .reci-biaoqian {margin:0;}
 
 /*
-*	渚ц竟璇勮
+*	侧边评论
 */
 .side-pinglun {}
 .side-pinglun {}
@@ -1229,7 +1226,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 
 
 /*
-*	at鐢ㄦ埛
+*	at用户
 */
 #at-view {position:absolute;top: 0;left: 0;display: none;margin-top: 18px;background: white;border: 1px solid #DDD;border-radius: 3px;box-shadow: 0 0 5px rgba(0,0,0,0.1);min-width: 120px;}
 #at-view .cur {background: #3366FF;color: white;}
@@ -1242,8 +1239,8 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 
 
 /*
-*  涓汉涓績
-*  by瑙佸ぉ
+*  个人中心
+*  by见天
 *  13.04.22
 */
 .individual-center {}
@@ -1358,7 +1355,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 .zhmima-btm {padding:20px 0;}
 .i-red3  {color:#b20000;font-style:normal;}
 
-/*娑堟伅涓績鏂�013.08.01*/
+/*消息中心新2013.08.01*/
 .msg-center-top {overflow:hidden;}
 .msg-center-top a {width: 120px;height: 31px;line-height: 31px;display: block;background-color: #999;text-align: center;color: #fff;font-size: 12px;float: left;}
 .msg-center-top a.ucontype {background-color: #555;font-weight: bold;}
@@ -1429,7 +1426,7 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 
 #tags_list {width:510px;margin:30px 0 0 65px;border-left:1px solid #ccc;padding:0 0 30px 40px;}
 #tags_list .daytitle {font-size:14px;margin:0 0 -30px -100px;}
-#tags_list .box-tag {font:14px/30px '寰蒋闆呴粦';position:relative;}
+#tags_list .box-tag {font:14px/30px '微软雅黑';position:relative;}
 #tags_list .box-tag a {padding:2px 4px;background-color:#56aaff;color:#fff;border-radius:1px;font-size:16px;}
 #tags_list .box-tag a:hover {text-decoration:none;background-color:#39f}
 #tags_list .box-tag a.add-tag {display:inline-block;height:12px;line-height:12px;overflow:hidden;position:relative;padding:0;top:-7px;left:5px;}
@@ -1519,14 +1516,14 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 .tags-img-list li .p-2 {height:20px;line-height:20px;overflow:hidden;}
 
 /*
-*  鎺ㄨ崘鍏徃
-*  by瑙佸ぉ
+*  推荐公司
+*  by见天
 *  13.05.05
 */
 .recommend-tags-gs {}
 /*
-*  鎺ㄨ崘鍏徃2
-*  by瑙佸ぉ
+*  推荐公司2
+*  by见天
 *  13.05.05
 */
 .recommend-tags-gs2 {}
@@ -1550,8 +1547,8 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 
 
 /*
-*  宸ヤ笟浜掕仈缃�
-*  by瑙佸ぉ
+*  工业互联网
+*  by见天
 *  13.05.24
 */
 .recommend-tags-rw  li .p-1 img {border-radius:30px;}
@@ -1562,8 +1559,8 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 .tagnr-3346-1 .t-h2 {background-color: #eee;}
 .tagnr-3346-3 .p-2 a {width:100%;height:30px;line-height:30px;text-align:center;display:block;overflow:hidden;background-color:#cb8ea9;color:#fff;}
 /*
-*  鍏充簬鎴戜滑
-*  by瑙佸ぉ
+*  关于我们
+*  by见天
 *  13.05.07
 */
 .about-box {position:relative;padding:30px;}
@@ -1576,14 +1573,14 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 .about-box .career-title h2 {display: inline-block;position: relative;font-size: 18px;width: 130px;margin-left: -65px;font-weight: normal;text-align: center;left: 50%;background-color:rgb(250, 250, 252);z-index: 2;}
 .about-box .career-title:after {content: '';display: inline-block;position: relative;width: 100%;height: 1px;background: #cacaca;top: -46px;border: 0;}
 /*
-*  绠＄悊
-*  by瑙佸ぉ
+*  管理
+*  by见天
 *  13.05.07
 */
 #gl_set_iframe_wrap {position:fixed;left:50%;top:50%;margin:-337px 0 0 -230px;width:675px;height:460px;overflow-x:hidden;overflow-y:auto;background-color:#fff;padding:40px 10px 10px;border:5px solid #666;box-shadow:1px 1px 1px #ccc;z-index:999;}
 #gl_set_iframe_wrap .close {position:absolute;right:10px;top:10px;font-size:18px;font-style:normal;z-index:3;}
 #gl_set_iframe {width:100%;height:100%;}
-/*绠＄悊绐楃偣鍑绘嫋鍔�/
+/*管理窗点击拖动*/
 #tuodong {position:absolute;top:0;height:0;width:688px;height:25px;line-height:25px;background:#ccc;font-size:14px;text-indent:10px;z-index:2;}
 
 .guanli-wrap {margin:15px 0;background:#eee;padding:5px 0;height:20px;}
@@ -1594,8 +1591,8 @@ border: 1px solid #eee;margin: 10px 20px 10px 0;border-radius: 2px;box-shadow: i
 .guanli-wrap li.pos-t a {color:#999;}
 
 /*
-*  娴侀噺缁嗗垯
-*  by瑙佸ぉ
+*  流量细则
+*  by见天
 *  13.11.12
 */
 .nrtj-wrap {margin:40px 0 30px;}
@@ -1660,8 +1657,8 @@ z-index:1;font-size:12px;margin:0 auto;
 .nrtj-ul li div:hover {z-index:3;}
 
 /*
-*  寮瑰嚭妗�
-*  by瑙佸ぉ
+*  弹出框
+*  by见天
 *  13.05.09
 */
 
@@ -1692,8 +1689,8 @@ z-index:1;font-size:12px;margin:0 auto;
 .fwin_dialog_cover {}
 
 /*
-*  鎻愪氦寤鸿
-*  by瑙佸ぉ
+*  提交建议
+*  by见天
 *  13.05.09
 */
 .float-report-box {width:300px;border:4px solid rgba(224,224,224,0.6);box-shadow:1px 1px 1px rgba(0,0,0,0.6);position:absolute;background:#fff;z-index:999;}
@@ -1707,7 +1704,7 @@ z-index:1;font-size:12px;margin:0 auto;
 .float-report-box .ipt-box label {float:left;width:78px;line-height:24px;text-align:right;padding-right:5px;}
 /*
 *  404
-*  by瑙佸ぉ
+*  by见天
 *  13.05.09
 */
 .box-404 {height:600px;background:url(../img/404.jpg) no-repeat 130px 180px;padding:80px 0 0  200px;}
@@ -1715,8 +1712,8 @@ z-index:1;font-size:12px;margin:0 auto;
 .box-404 h2 {font-size: 24px;}
 
 /*
-*  rss璁㈤槄
-*  by瑙佸ぉ
+*  rss订阅
+*  by见天
 *  13.05.09
 */
 .rss-wrap {padding:30px 0;}
@@ -1733,8 +1730,8 @@ z-index:1;font-size:12px;margin:0 auto;
 
 
 /*
-*  rss璁㈤槄
-*  by瑙佸ぉ
+*  rss订阅
+*  by见天
 *  13.05.09
 */
 .system-msg {padding:60px 0 0 60px;min-height:500px;}
@@ -1745,8 +1742,8 @@ z-index:1;font-size:12px;margin:0 auto;
 
 
 /*
-*  鐢ㄧ偣
-*  by瑙佸ぉ
+*  用点
+*  by见天
 *  13.07.15
 */
 .yongdian {margin-top:30px;}
@@ -1811,8 +1808,8 @@ z-index:1;font-size:12px;margin:0 auto;
 .carousel-indicators li {width:95px;height:56px;margin-left:12px;margin-bottom:10px;cursor:pointer;}
 .carousel-indicators .active {background:none;}
 /*
-*  鎺ㄨ崘鐢ㄧ偣
-*  by瑙佸ぉ
+*  推荐用点
+*  by见天
 *  13.07.15
 */
 .recommend-yongdian {margin:0 0 20px;}
@@ -1833,14 +1830,14 @@ z-index:1;font-size:12px;margin:0 auto;
 .yongdian-tags .title a {color: #444;}
 
 /**
-*	+1鏍峰紡
-*  by瑙佸ぉ
+*	+1样式
+*  by见天
 *  13.07.16
 **/
 .voteAni {position:absolute;}
 
 /**
-*	鎵╁睍闃呰
+*	扩展阅读
 **/
 #extra_read {position:relative;padding:20px 10px 0;overflow:hidden;font-size:14px;line-height:26px;}
 #extra_read_close {background:url(../img/new_icon.png) no-repeat -263px -369px;display:block;width:17px;height:17px;overflow:hidden;right:10px;top:25px;position:absolute;cursor:pointer;}
@@ -1900,7 +1897,7 @@ z-index:1;font-size:12px;margin:0 auto;
 #baidu_clb_slot_702804 {width:280px;margin:10px auto 0;}
 
 /*
-* 娲诲姩鏃ュ巻
+* 活动日历
 */
 .box-calendar {position:relative;z-index:3;}
 .Calendar-top {height:24px;line-height:24px;overflow:hidden;background:#2e3641;color:#fff;padding:10px;box-shadow:1px 0 1px #ccc;}
@@ -1926,12 +1923,12 @@ z-index:1;font-size:12px;margin:0 auto;
 .i-jiao:before,
 .i-jiao:after {display:block;font-size:24px;font-family:"Arial";overflow:hidden;overflow:hidden;position:absolute;}
 .i-jiao {width:20px;height:20px;line-height:34px;top:-20px;color:#eee;}
-.i-jiao:before {content:"鈾�;height:24px;left:0;top:0;color:#ccc;z-index:0;}
-.i-jiao:after {content:"鈾�;height:24px;left:0;top:2px;color:#eee;z-index:1;}
+.i-jiao:before {content:"♦";height:24px;left:0;top:0;color:#ccc;z-index:0;}
+.i-jiao:after {content:"♦";height:24px;left:0;top:2px;color:#eee;z-index:1;}
 
 
 /*
-* 鍚戜綔鑰呮彁闂�
+* 向作者提问
 */
 .author-ask {}
 .author-ask h3 {font-size: 12px;margin: 10px 2px 5px;height: 26px;line-height: 26px;border-bottom:1px solid #f1f1f1;color: #999;}
@@ -1954,7 +1951,7 @@ z-index:1;font-size:12px;margin:0 auto;
 .author-answer a {color:#f60;}
 
 /*
-* 鍚戜綔鑰呮彁闂�
+* 向作者提问
 */
 .author-ask2 {}
 .author-ask2 h3 {font-size: 12px;margin: 10px 2px 5px;height: 26px;line-height: 26px;border-bottom: 1px solid #f1f1f1;color: #999;}
@@ -1977,7 +1974,7 @@ z-index:1;font-size:12px;margin:0 auto;
 .author-ask2 .askAuthor:focus {background:#eee;}
 
 /*
-* 鍚戜綔鑰呮彁闂�
+* 向作者提问1
 */
 .author-ask1 {}
 .author-ask1 h3 {font-size: 12px;margin: 10px 2px 5px;height: 26px;line-height: 26px;border-bottom: 1px solid #f1f1f1;color: #999;}
@@ -1996,7 +1993,7 @@ z-index:1;font-size:12px;margin:0 auto;
 
 
 /*
-* 鍚戜綔鑰呮彁闂垪琛ㄩ〉
+* 向作者提问列表页
 */
 .wrap-ask-list {margin:30px 0 0;}
 .wrap-ask-list a {color:#08c;}
@@ -2024,9 +2021,9 @@ z-index:1;font-size:12px;margin:0 auto;
 
 
 /*
-*  鍚嶇墖0
-*  by瑙佸ぉ
-*  13.06.06鍚敤
+*  名片0
+*  by见天
+*  13.06.06启用
 */
 .author-card {margin-top:20px;padding:10px;background-color:#fff;box-shadow:1px 1px 3px #ccc;position:relative;border-left:5px solid #999;}
 .author-card .author-card-img {width:100px;text-align:center;font-size:12px;}
@@ -2053,7 +2050,7 @@ z-index:1;font-size:12px;margin:0 auto;
 .author-card .card-name a {margin-left:10px;color:#999;}
 .author-card .card-name em {font-style:normal;}
 .author-card .yijuhua {min-height:13px;}
-.author-card .yijuhua i {font-style:normal;font-size:24px;font-family:"瀹嬩綋";text-shadow:1px 1px 1px #ccc;}
+.author-card .yijuhua i {font-style:normal;font-size:24px;font-family:"宋体";text-shadow:1px 1px 1px #ccc;}
 .author-card .card-state {color:#c5c5c5;font-size:12px;}
 .author-card .card-ctt {border-top:1px dashed #bbb;padding-top:15px;font-size:12px;}
 .author-card .author-card .i-jiao {background:url(../img/btn_bg.png?data=20130902) no-repeat 0 -84px;width:17px;height:12px;overflow:hidden;position:absolute;bottom:-12px;left:30px;}
@@ -2071,8 +2068,8 @@ z-index:1;font-size:12px;margin:0 auto;
 
 
 /*
-鏂颁釜浜轰腑蹇�
-2013骞�鏈�2鏃�
+新个人中心
+2013年8月22日
 */
 
 .author-page {margin-top:30px;border-bottom:1px dashed #ccc;}
@@ -2133,8 +2130,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd',endColor
 
 
 /*
-*  涓汉涓婚〉
-*  by瑙佸ぉ
+*  个人主页
+*  by见天
 *  13.04.22
 */
 .personal-homepage {margin:20px 0 0;}
@@ -2180,9 +2177,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd',endColor
 .personal-homepage .book-box-ctt h4 a {font-size:14px;color:#111;}
 .personal-homepage .book-box-ctt .p1 {font-size:16px;color:#999;}
 .personal-homepage .book-box-ctt .p2 {background: #e1e1e1;padding:5px 10px;position: relative;border-radius: 5px;margin-top:10px;}
-.personal-homepage .book-box-ctt .p2:before {content: "鈾�;position:absolute;left:10px;top:-12px;color: #e1e1e1;font-size: 18px;} 
+.personal-homepage .book-box-ctt .p2:before {content: "♦";position:absolute;left:10px;top:-12px;color: #e1e1e1;font-size: 18px;} 
 /*
-* 涓汉涓績鍙充晶
+* 个人中心右侧
 */
 .user-intro {margin:20px 0;}
 .user-intro p {margin:0;}
@@ -2224,7 +2221,7 @@ left:200px;
 }
 
 /*
-* 涓汉涓績鎴戠殑鏂囩珷
+* 个人中心我的文章
 */
 .personal-homepage-h3 .homepage-tougao {color:#fff;}
 .home-article {margin-bottom:0;}
@@ -2239,7 +2236,7 @@ ul.home-article li {border-bottom:1px dashed #ccc;display:block;line-height:24px
 .home-article li .p3 img {width:100px;box-shadow:1px 1px 1px #ccc;}
 
 /*
-* 棰滆壊
+* 颜色
 */
 .ico-c {color:#fff;padding:0 8px;font-size:12px;line-height:20px;border-radius:2px;margin-top:4px;}
 .c-1 {background-color:#69a2cf;}
@@ -2249,7 +2246,7 @@ ul.home-article li {border-bottom:1px dashed #ccc;display:block;line-height:24px
 
 
 /*
-* 涓汉涓績鎴戠殑鏂囩珷妯″潡
+* 个人中心我的文章模块
 */
 .home-article-box ul li {display:block;border-bottom:1px dashed #ccc;padding:10px 0 20px;margin-bottom:10px;}
 .home-article-box .p2,
@@ -2257,24 +2254,24 @@ ul.home-article li {border-bottom:1px dashed #ccc;display:block;line-height:24px
 .home-article-box .p2 time {margin-right:10px;}
 
 /*
-* 涓汉涓績鎴戠殑鏀惰棌
+* 个人中心我的收藏
 */
 ul.home-collection-box li {border-bottom:1px dashed #ccc;display:block;line-height:24px;padding:10px;overflow:hidden;}
 .home-collection-box li .source-quote a {font-size:12px;}
 .home-collection-box li time {font-size:12px;color:#aaa;margin-left:5px;float:right;}
 .home-collection-box li a {margin-right:10px;}
 /*
-* 涓汉涓績鎴戠殑璇勮妯″潡
+* 个人中心我的评论模块
 */
 .home-review-box ul li {display:block;border-bottom:1px dashed #ccc;padding:0 0 20px;margin-bottom:10px;}
 
 /*
-* 涓汉涓績鎴戠殑鐐硅妯″潡
+* 个人中心我的点论模块
 */
 .home-comment-on ul li {display:block;border-bottom:1px dashed #ccc;padding:10px 0 20px;margin-bottom:10px;}
 
 /*
-* 涓汉涓績鎴戠殑璁㈤槄妯″潡
+* 个人中心我的订阅模块
 */
 .subscribe ul li {margin:10px 0 20px;padding:0;}
 .subscribe li .a-img {float:left;}
@@ -2286,21 +2283,21 @@ ul.home-collection-box li {border-bottom:1px dashed #ccc;display:block;line-heig
 .subscribe li p a:hover {color:#08c;}
 
 /*
-* 涓汉涓績鎴戠殑鎻愰棶妯″潡
+* 个人中心我的提问模块
 */
 .askbox ul li {margin:10px 0 20px;padding:0;}
 .askbox li p {margin:0;color:#999;}
-.askbox li .p1 {font-family:'瀹嬩綋';margin-bottom:5px;}
-.askbox li .p1 a {font-family:'寰蒋闆呴粦'}
+.askbox li .p1 {font-family:'宋体';margin-bottom:5px;}
+.askbox li .p1 a {font-family:'微软雅黑'}
 .askbox li .p2 {font-size:12px;}
 
 /*
-* 涓汉涓績鎴戠殑璺熼殢妯″潡
+* 个人中心我的跟随模块
 */
 .followbox {}
 
 /*
-* 涓汉涓績鎴戠殑铏庤抗
+* 个人中心我的虎迹
 */
 .footprint {}
 .footprint dl {padding-bottom:20px;border-bottom:1px dashed #ddd;}
@@ -2308,10 +2305,10 @@ ul.home-collection-box li {border-bottom:1px dashed #ccc;display:block;line-heig
 .footprint dl dd {margin:0 0 10px;}
 .footprint dl dd a {color:#999;font-size:12px;}
 .footprint dl dd a:hover {color:#08c;}
-.footprint dl i {font-size:24px;font-family:"瀹嬩綋";font-style:normal;line-height:24px;}
+.footprint dl i {font-size:24px;font-family:"宋体";font-style:normal;line-height:24px;}
 
 /*
-* 涓汉涓績璇︾粏璧勬枡
+* 个人中心详细资料
 */
 .home-profile-details-wrap {}
 .home-profile-details-wrap dl {width:100%;display:block;border-bottom:1px dashed #ddd;padding-bottom:10px;}
@@ -2442,8 +2439,8 @@ transform:scale(1.05,1.05);
 .hxrzzz-level-4 {background-image:url(../img/vertify_orange_mini04.png?data=20140215)}
 .hxrzzz-level-5 {background-image:url(../img/vertify_orange_mini05.png?data=20140215)}
 /*
-* 鍏ㄧ珯璁よ瘉灏忔爣璋冩暣
-* by 瑙佸ぉ
+* 全站认证小标调整
+* by 见天
 */
 .c-hxrz {position:relative;top:3px;margin:0 6px 0 2px;width:20px;height:16px;line-height:12px;display: inline-block;}
 .c-hxrz-i {font-family:'arial';font-size:12px;font-style:normal;position:absolute;display:none;}
@@ -2460,7 +2457,7 @@ transform:scale(1.05,1.05);
 
 
 /*
-* 铏庡梾璁よ瘉
+* 虎嗅认证
 * renzheng-wrap
 */
 .renzheng-wrap {}
@@ -2496,8 +2493,8 @@ transform:scale(1.05,1.05);
 .renzheng-right li a.active {background-color:#08c;color:#fff;}
 
 /*
-* 寰俊鍏紬鍙�
-* by 瑙佸ぉ
+* 微信公众号
+* by 见天
 * 2014.03.08
 */
 .personal-profile-box .wechat-erweima-wrap {height:auto;}
@@ -2512,8 +2509,8 @@ transform:scale(1.05,1.05);
 
 
 /*
-* 涓汉涓績-鏍囩灞曠ず
-* by 瑙佸ぉ
+* 个人中心-标签展示
+* by 见天
 * 2014.03.08
 */
 .pre-territory-tags-wrap {border:1px solid #eee;padding-top:0;}
@@ -2524,8 +2521,8 @@ transform:scale(1.05,1.05);
 .pre-territory-tags-wrap ul.ul-taglist {margin-left:10px;}
 
 /*
-* 鏈璇佷綔鑰咃紝涓汉涓績鎻愮ず
-* by 瑙佸ぉ
+* 未认证作者，个人中心提示
+* by 见天
 * 2014.03.08
 */
 .un-renzheng-box {border:2px dashed #f00;}
@@ -2541,7 +2538,7 @@ transform:scale(1.05,1.05);
 .renzheng-box-weixin-ctt dl.wechat-erweima-wrap,
 .renzheng-box-weixin-wrap dl.renzheng-box-weixin {border:none;}
 /*
-* 涓汉鏍囩
+* 个人标签
 */
 /*
 * set_tags_form
@@ -2579,11 +2576,11 @@ transform:scale(1.05,1.05);
 
 
 /*
-* 涓汉涓績鍚戜綔鑰呮彁闂ā鍧�
+* 个人中心向作者提问模块
 */
 .personal-homepage .ask-list-box {margin:0;padding:0 10px;}
 /*
-* 棣栭〉鍒楄〃-璧炲姪鏂囩珷
+* 首页列表-赞助文章
 */
 .idx-sponsored {background:#f6f6f6;margin:-1px 0 0;padding:10px;box-shadow:inset -1px -1px 1px #fff,inset 1px 1px 1px #fff;border-bottom:none;position:relative;border:1px solid #eee;}
 .idx-list .idx-sponsored .a-img img {width:70px;height:auto;}
@@ -2593,7 +2590,7 @@ transform:scale(1.05,1.05);
 .idx-list .idx-sponsored .sponsored-img {position:absolute;right:15px;top:15px;width:60px;border-radius:5px;}
 .idx-sponsored .i-zznl {background:url(../img/idx_zznl.png) no-repeat;position:absolute;width:30px;height:31px;overflow:hidden;left:0;bottom:0;}
 /*
-* 棣栭〉-璧炲姪鍐呭妯″潡
+* 首页-赞助内容模块
 */
 .sponsored-content {}
 .sponsored-content ul {padding:0;}
@@ -2611,16 +2608,16 @@ transform:scale(1.05,1.05);
 .sponsored-banner {margin:30px 0 20px;}
 .sponsored-banner img {box-shadow:0 1px 1px #ccc;}
 
-/*绉垎璁剧疆*/
+/*积分设置*/
 .box-score {margin:20px auto;width:600px;}
 .box-score .tb-strong {margin-left:20px;}
 
 
-/*骞垮憡*/
+/*广告*/
 .r-ad {margin:0 0 10px;}
 .idxbox-ad {padding:20px 0;}
 
-/*鍚庡彴璁剧疆寰崥鍏宠仈*/
+/*后台设置微博关联*/
 #connectionWeibo h4 {line-height:30px;margin:20px 0 0;}
 #connectionWeibo .info {margin-left:30px;font-size:18px;}
 #connectionWeiboList {margin:10px 0;border:1px solid #eee;padding:5px 10px;}
@@ -2629,7 +2626,7 @@ transform:scale(1.05,1.05);
 
 
 /*
-*   鏀堕泦澶磜rap
+*   收集头wrap
 *   collect-wrap
 */
 .collect-wrap {margin-top:10px;}
@@ -2640,14 +2637,14 @@ transform:scale(1.05,1.05);
 .collect-wrap-right .pull-right .add-collect {width:60px;height: 35px;line-height: 30px;font-size:30px;overflow:hidden;padding:0;border-radius:2px;background:none;color:#08c;border:1px solid #08c;margin-top:5px;}
 
 /*
-*   鏀堕泦鍐呭椤�
+*   收集内容页
 *   collect-list-wrap
 */
 .collect-list-wrap {}
 .collect-list-wrap .article-box .a-img img {width: 220px;height: 146px;}
 
 /*
-*   鏀堕泦鍐呭椤�
+*   收集内容页
 *   collect-neirong-index
 */
 
@@ -2681,7 +2678,7 @@ transform:scale(1.05,1.05);
 .collect-edit-box .add-collect i {margin:3px 5px 0 0;}
 
 /*
-*   鍒涘缓鏀堕泦鍗曢〉
+*   创建收集单页
 *   create-collect-wrap
 */
 .create-collect-wrap {width:960px;margin:20px auto 0;}
@@ -2703,7 +2700,7 @@ transform:scale(1.05,1.05);
 .create-collect-wrap .collect-checkbox {position:relative;top:-3px;}
 
 /*
-*   鍔犲叆鏀堕泦鎸夐挳+寮瑰嚭妯″潡
+*   加入收集按钮+弹出模块
 *   add-collect
 */
 .neirong-box a.add-collect {border-radius: 2px;box-shadow: 1px 1px 1px #ccc;background: #0054a6;color: #fff;font-size: 12px;margin:10px 10px 0 0;}
@@ -2757,8 +2754,8 @@ transform:scale(1.05,1.05);
 
 
 /*
-* by 瑙佸ぉ
-* 绋嶅悗闃呰
+* by 见天
+* 稍后阅读
 * read-later
 * 2014.01.22
 */
@@ -2770,7 +2767,7 @@ transform:scale(1.05,1.05);
 
 
 /*
-* 涓汉涓績-浣滆�璁よ瘉-姝ラ
+* 个人中心-作者认证-步骤
 */
 .home-user-identify {}
 .home-user-identify ol {height:40px;background:url(../img/home_user_identify.png) no-repeat;overflow:hidden;}
@@ -2782,20 +2779,20 @@ transform:scale(1.05,1.05);
 .per-btn-wrap .btn {margin:0 10px;}
 
 /*
-* 鍑虹敓骞存湀 select鏍峰紡
-* 瑙佸ぉ
+* 出生年月 select样式
+* 见天
 */
 #birth_ymd select.span1 {margin:0 5px;}
 
 /*
-* 骞垮憡
-* 鍐呭椤靛箍鍛婇浣嶆牱寮�
+* 广告
+* 内容页广告首位样式
 */
 .cttbox-ad1 {margin-top:10px;}
 
 /*
-* 绋嶅悗闃呰鍒楄〃椤�
-* by 瑙佸ぉ
+* 稍后阅读列表页
+* by 见天
 * 2014.03.07
 */
 
@@ -2814,8 +2811,8 @@ a.later-reading-active {display:block;}
 .idx-hldj .later-reading-wrap {position:absolute;left:-15px;min-width:210px;}
 
 /*
-* 铏庡梾鎺ㄥ箍app骞垮憡 涓存椂css
-* 瑙佸ぉ
+* 虎嗅推广app广告 临时css
+* 见天
 * hx-new-adbox-right
 */
 .hx-new-adbox-right {position:relative;width:100%;height:160px;overflow:hidden;margin-top:20px;z-index:1;}
@@ -2834,11 +2831,11 @@ a.later-reading-active {display:block;}
 .hx-new-adbox-article .hx-ad-close {width:20px;height:20px;position:absolute;right:0;top:0;cursor:pointer;}
 
 /*
-* 灞忓箷1024
+* 屏幕1024
 */
 @media screen and (max-width:1152px) {
 }
-/**鏈獙璇佺敤鎴峰ご閮ㄦ樉绀�
+/**未验证用户头部显示
 */
 .email-validation-hint {
     margin: -10px 0 10px 0;
